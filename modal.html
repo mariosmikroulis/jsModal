@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			.modal
+			{
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				padding: 30px;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				opacity: 0;
+				visibility: hidden;
+				transition:visibility 0s linear 0.1s,opacity 0.3s ease;
+				webkit-overflow-scrolling: touch;
+				outline: 0;
+				background-color: rgba(0,0,0,0.5);
+				overflow: hidden;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			@media (min-width: 768px)
+			{
+				.modal_container
+				{
+					width: 600px;
+					margin: 30px auto;
+				}
+			}
+			
+			@media (max-width: 767px)
+			{
+				.modal_container
+				{
+					width: auto;
+					margin: 10px;
+				}
+			}
+			
+			.modal_open
+			{
+				visibility:visible;
+				opacity: 1;
+				z-index: 20;
+				transition-delay:0s;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			
+			.modal_header
+			{
+				padding: 15px 0;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			
+			.modal_title
+			{
+				margin: 0;
+				line-height: 1.42857143;
+				font-size: 18px;
+			}
+
+			.modal_closeBtn
+			{
+				-webkit-appearance: none;
+				padding: 0;
+				cursor: pointer;
+				background: 0 0;
+				border: 0;
+				margin-top: -2px;
+				float: right;
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 1;
+				color: #000;
+				text-shadow: 0 1px 0 #fff;
+				filter: alpha(opacity=20);
+				opacity: .2;
+			}
+			
+			.modal_content
+			{
+				position: relative;
+				padding: 15px 0;
+			}
+		
+			.modal_container
+			{
+				position: relative;
+				z-index: 21;
+				transform: translateY(0%);
+				padding: 10px 30px;
+				background-color: #fff;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				border: 1px solid #999;
+				border: 1px solid rgba(0,0,0,.2);
+				border-radius: 6px;
+				outline: 0;
+				-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+				box-shadow: 0 3px 9px rgba(0,0,0,.5);
+			}
+			
+			.modal_footer
+			{
+				padding: 15px 0;
+				text-align: right;
+				border-top:1px solid #e5e5e5;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="open">Open Modal</button>
+
+		<div class="modal modal_close" id="modal">
+			<div class="modal_container">
+				<div class="modal_header">
+					<button type="button" class="modal_closeBtn modal_close">×</button>
+					<h4 class="modal_title">Modal Header</h4>
+				</div>
+				<div class='modal_content'>Modal window text</div>
+				<div class="modal_footer"><button type="button" class="btn btn-default modal_close">Close</button></div>
+			</div>
+		</div>
+	</body>
+	<script>
+		let modal = function (settings)
+		{
+			let _allowUsage = true, _loadModal, _setModalLayout, _setOverlay, _setContainer, _setHeader, _setContent, _setCloseBtn, _setOpenBtn, _showModal, _hideModal;
+			let _modalID, _modalEl, _btnID, _btnEl, _closeBtnEl, _overlayEl, _containerEl, _contentEl, _headerEl;
+
+			_loadModal = function()
+			{
+				if(typeof settings === "object")
+				{
+					if(typeof settings.modalID === "string")
+					{
+						_setModalLayout();
+						_setContainer();
+						_setHeader();
+						_setContent();
+					}
+
+					if(typeof settings.buttonID === "string")
+					{
+						_setOpenBtn();
+					}
+				}
+			};
+
+			_setModalLayout = function ()
+			{
+				try
+				{
+					_modalID = settings.modalID;
+					_modalEl = document.getElementById(_modalID);
+					_modalEl.addEventListener("click", _hideModal);
+				}
+
+				catch (e)
+				{
+					console.error("This modal element with the ID '" +  _modalID + "' does not exist.");
+					_allowUsage = false;
+				}
+			};
+
+			_setContainer = function()
+			{
+				try
+				{
+					_containerEl = _modalEl.getElementsByClassName("modal_container")[0];
+				}
+
+				catch (e)
+				{
+					console.error("The container element in the modal ID '" +  _modalID + "' does not exist.");
+					_allowUsage = false;
+				}
+			};
+
+			_setHeader = function()
+			{
+				try
+				{
+					_headerEl = _containerEl.getElementsByClassName("modal_header")[0];
+					_titleEl =  _headerEl.getElementsByClassName("modal_title")[0];
+				}
+
+				catch (e)
+				{
+					console.error("This header or title element in the modal ID '" +  _modalID + "' does not exist.");
+					_allowUsage = false;
+				}
+			};
+			
+			_setContent = function()
+			{
+				try
+				{
+					_contentEl = _containerEl.getElementsByClassName("modal_content")[0];
+				}
+
+				catch (e)
+				{
+					console.error("This content element in the modal ID '" +  _modalID + "' does not exist.");
+					_allowUsage = false;
+				}
+			};
+
+			_setOpenBtn = function ()
+			{
+				try
+				{
+					_btnID = settings.buttonID;
+					_btnEl = document.getElementById(_btnID);
+					_btnEl.addEventListener("click", _showModal);
+				}
+
+				catch (e)
+				{
+					console.error("This button element with the ID '" +  _btnID + "' does not exist." + e);
+				}
+			};
+			
+			_showModal = function(content = {})
+			{
+				if(_allowUsage)
+				{
+					if(typeof content === "object")
+					{
+						if(typeof content.title === "string")
+						{
+							_titleEl.innerHTML = content.title;
+						}
+						
+						if(typeof content.body === "string")
+						{
+							_contentEl.innerHTML = content.body;
+						}
+					}
+
+					_modalEl.classList.add("modal_open");
+				}
+			}
+			
+			this.show = function (content = {})
+			{
+				_showModal(content);
+			};
+
+			_hideModal = function(content = {})
+			{
+				if(_allowUsage)
+				{
+					if(typeof content.target.classList === "object" && !content.target.classList.contains("modal_close"))
+					{
+						return;
+					}
+					
+					_modalEl.classList.remove("modal_open");
+				}
+			};
+			
+			this.hide = function(content = {})
+			{
+				_hideModal(content);
+			}
+
+			_loadModal();
+		};
+		
+		
+		let modalError;
+		
+		window.onload = function ()
+		{
+			modalError = new modal({modalID : "modal", buttonID : "open"});
+		}
+	</script>
+</html>
