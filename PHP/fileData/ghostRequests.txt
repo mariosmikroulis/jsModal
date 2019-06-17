@@ -1,0 +1,57 @@
+! = required
+? = depends
+- = optional
+
+Quote Request:
+{
+  ! "action" : "priceRequest"
+  ! "bookingType": "randomQuote",
+  ? "tabletID": "3",
+  ? "websiteID": "jfaif",
+  ! "journeys" : {
+  !     "pickupID" : "aaaa",
+  !     "dropoffID" : "bbbb",
+  !     "bookingDate" : "dd/mm/YYYY H:i",
+  !     "mainVehicle" : "",
+  -     "isReturnRequested" : 0,
+  -     "returnBookingDate" : "",
+  -     "returnVehicle" : "",
+  -     "airportInfo" : {
+  -         "isMainAirportPickup" : 0,
+  -         "mainFlightNumber" : "",
+  -         "isReturnAirportPickup" : 0,
+  -         "returnFlightNumber" : ""
+        }
+    },
+    "passenger" : {
+        "name" : "someone",
+        "mobileNumber" : "",
+        "emailAddress" : "test@test.test",
+        "driverNote" : "haha"
+    },
+    "payment" : {
+        "method" : "Cash",
+        "cardLongNumber" : "1111222233334444",
+        "issueDate" : "12/22",
+        "expiryDate" : "21/21",
+        "cv2" : "123"
+    }
+    "promoCode" : ""
+}
+
+Quote Response:
+{
+    "results": "Success",
+    "data": {
+        "mainQuoteID" : "fafa",
+        "returnQuoteID" : "",
+        "prices" : [[
+            {"vehicleName" : "Saloon", "cost" : "10.00"},
+            {"vehicleName" : "MPV", "cost" : "15.00"}
+        ][
+            {"vehicleName" : "Saloon", "cost" : "10.00"},
+                        {"vehicleName" : "MPV", "cost" : "15.00"}
+        ]],
+    },
+    "dateTime":"idk"
+}

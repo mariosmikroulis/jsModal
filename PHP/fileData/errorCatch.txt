@@ -1,0 +1,2299 @@
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+14-06-2019 20:04:0101
+
+Request: 
+{"action":"topupDriverBalance","driverID":"74","authKey":"3fd9bfa0e9608634f834a83767dbd6c4787a4906","amount":"80.00","cardNumber":"446238812741865","expiryDate":"04\/21","cv2":"570"}
+
+Error Details: 
+Duplicate entry '' for key 'PRIMARY'
+SQL: INSERT INTO `judopayTransactions` (`yourPaymentReference`, `receiptId`, `customRef`, `madeOn`, `type`, `result`, `message`, `originalAmount`, `netAmount`, `amount`, `cardLastFour`, `endDate`, `cardToken`, `cardType`, `consumerToken`, `yourConsumerReference`) VALUES ('', '', '', '1560539041', '', '', 'Sorry, we\'re unable to process your request. Please check your details and try again.', '', '', '', '', '', '', '', '', '')
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), makeTransaction() in topupDriverBalance (topupDriverBalance), __construct() in judopayDirectPayment (judopayDirectPayment), checkPrepareResponse() in judopayDirectPayment (judopayDirectPayment), recordPayment() in judopayDirectPayment (judopayDirectPayment), insert() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+14-06-2019 19:33:2525
+
+Request: 
+{"action":"topupDriverBalance","driverID":"74","authKey":"8a3523b3d5eb6375cf0bebdffe86de49861e685c","amount":"80.00","cardNumber":"492881980573657","expiryDate":"09\/21","cv2":"701"}
+
+Error Details: 
+Duplicate entry '' for key 'PRIMARY'
+SQL: INSERT INTO `judopayTransactions` (`yourPaymentReference`, `receiptId`, `customRef`, `madeOn`, `type`, `result`, `message`, `originalAmount`, `netAmount`, `amount`, `cardLastFour`, `endDate`, `cardToken`, `cardType`, `consumerToken`, `yourConsumerReference`) VALUES ('', '', '', '1560537205', '', '', 'Sorry, we\'re unable to process your request. Please check your details and try again.', '', '', '', '', '', '', '', '', '')
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), makeTransaction() in topupDriverBalance (topupDriverBalance), __construct() in judopayDirectPayment (judopayDirectPayment), checkPrepareResponse() in judopayDirectPayment (judopayDirectPayment), recordPayment() in judopayDirectPayment (judopayDirectPayment), insert() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:52:1111
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:48:4646
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:48:1818
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:45:2424
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:44:5757
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:43:3535
+
+Request: 
+{"action":"topupDriverBalance","driverID":"93","authKey":"b786715866e64e39d549b05c709f0ee242faa2b1","amount":"50","cardNumber":"4658588354385016","expiryDate":"08\/21","cv2":"696"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), setGhostAuthenticationID() in topupDriverBalance (topupDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:43:1010
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:42:4949
+
+Request: 
+{"action":"topupDriverBalance","driverID":"93","authKey":"b786715866e64e39d549b05c709f0ee242faa2b1","amount":"50","cardNumber":"4658588354385016","expiryDate":"08\/21","cv2":"696"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), setGhostAuthenticationID() in topupDriverBalance (topupDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:41:3737
+
+Request: 
+{"action":"getDriverBalance","authKey":"b786715866e64e39d549b05c709f0ee242faa2b1"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:39:4444
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:37:4444
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:35:2929
+
+Request: 
+{"action":"getDriverBalance","authKey":"616cdb841b0100908f8f4c516fe46cb8e129ca64"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 16:35:2727
+
+Request: 
+{"action":"getDriverBalance","authKey":"314b0267c7af0d26187a67de4d1460a8afe54626"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 15:54:4040
+
+Request: 
+{"action":"topupDriverBalance","driverID":"61","authKey":"ccfe4c9165ee78ea1938d15435a16f3073d0f0d7","amount":"100","cardNumber":"4921818846855735","expiryDate":"10\/19","cv2":"468"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), setGhostAuthenticationID() in topupDriverBalance (topupDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 15:54:2222
+
+Request: 
+{"action":"topupDriverBalance","driverID":"61","authKey":"ccfe4c9165ee78ea1938d15435a16f3073d0f0d7","amount":"100","cardNumber":"4921 8188 4685 5735","expiryDate":"10\/19","cv2":"468"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), setGhostAuthenticationID() in topupDriverBalance (topupDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 15:53:0101
+
+Request: 
+{"action":"topupDriverBalance","driverID":"61","authKey":"ccfe4c9165ee78ea1938d15435a16f3073d0f0d7","amount":"100","cardNumber":"4921818846855735","expiryDate":"10\/19","cv2":"468"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in topupDriverBalance (topupDriverBalance), setGhostAuthenticationID() in topupDriverBalance (topupDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 15:51:4848
+
+Request: 
+{"action":"getDriverBalance","authKey":"ccfe4c9165ee78ea1938d15435a16f3073d0f0d7"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 11:20:4444
+
+Request: 
+{"action":"getDriverBalance","authKey":"010c0045ca0cc35707d3e1bec8b21e0b3f33a2d4"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 05:46:1515
+
+Request: 
+{"action":"getDriverBalance","authKey":"98b2919c57830044634852f90a1235c6ef4cc882"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 05:45:5757
+
+Request: 
+{"action":"getDriverBalance","authKey":"98b2919c57830044634852f90a1235c6ef4cc882"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 05:45:1616
+
+Request: 
+{"action":"getDriverBalance","authKey":"98b2919c57830044634852f90a1235c6ef4cc882"}
+
+Error Details: 
+1
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 03:01:0101
+
+Request: 
+{"action":"getDriverBalance","authKey":"49d12af012655392ee426d13507f5d4b951a27bc"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 03:00:5858
+
+Request: 
+{"action":"getDriverBalance","authKey":"49d12af012655392ee426d13507f5d4b951a27bc"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 03:00:2525
+
+Request: 
+{"action":"getDriverBalance","authKey":"49d12af012655392ee426d13507f5d4b951a27bc"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+04-06-2019 01:10:2525
+
+Request: 
+{"action":"getDriverBalance","authKey":"07e64b49a62805bbed87387b63e32d23da3df411"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:51:1212
+
+Request: 
+{"action":"getDriverBalance","authKey":"27af2ca7d07e01ed3d1a4ea37edb66e5d9c61c59"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:48:4242
+
+Request: 
+{"action":"getDriverBalance","authKey":"27af2ca7d07e01ed3d1a4ea37edb66e5d9c61c59"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:47:5252
+
+Request: 
+{"action":"getDriverBalance","authKey":"27af2ca7d07e01ed3d1a4ea37edb66e5d9c61c59"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:45:2626
+
+Request: 
+{"action":"getDriverBalance","authKey":"27af2ca7d07e01ed3d1a4ea37edb66e5d9c61c59"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:42:1111
+
+Request: 
+{"action":"getDriverBalance","authKey":"27af2ca7d07e01ed3d1a4ea37edb66e5d9c61c59"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:30:5757
+
+Request: 
+{"action":"getDriverBalance","authKey":"96e5bdea3d65190d8245b28de33df97c9f59f3cd"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:26:3434
+
+Request: 
+{"action":"getDriverBalance","authKey":"96e5bdea3d65190d8245b28de33df97c9f59f3cd"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:26:2020
+
+Request: 
+{"action":"getDriverBalance","authKey":"96e5bdea3d65190d8245b28de33df97c9f59f3cd"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 18:22:1212
+
+Request: 
+{"action":"getDriverBalance","authKey":"06a8750acf23098477200ac11d7d9b3803d6c5b4"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 17:38:2525
+
+Request: 
+{"action":"getDriverBalance","authKey":"bd1a9d9f5fa03686d9138273b413f649f9c91fa0"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 17:38:0303
+
+Request: 
+{"action":"getDriverBalance","authKey":"bd1a9d9f5fa03686d9138273b413f649f9c91fa0"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1919
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1919
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1818
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1818
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1818
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1616
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+03-06-2019 12:56:1414
+
+Request: 
+{"action":"getDriverBalance","authKey":"f03665ddcfb74bd34960a1a22364606e098ca8bc","driverID":"714"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 14:36:0808
+
+Request: 
+{"action":"getDriverBalance","authKey":"3babe4e1bac2191acb0bf241ca26c9dd65924eff","driverID":"644"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 14:36:0707
+
+Request: 
+{"action":"getDriverBalance","authKey":"3babe4e1bac2191acb0bf241ca26c9dd65924eff","driverID":"644"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 14:36:0707
+
+Request: 
+{"action":"getDriverBalance","authKey":"3babe4e1bac2191acb0bf241ca26c9dd65924eff","driverID":"644"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 14:36:0707
+
+Request: 
+{"action":"getDriverBalance","authKey":"3babe4e1bac2191acb0bf241ca26c9dd65924eff","driverID":"644"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 14:36:0404
+
+Request: 
+{"action":"getDriverBalance","authKey":"3babe4e1bac2191acb0bf241ca26c9dd65924eff","driverID":"644"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 14:35:5454
+
+Request: 
+{"action":"getDriverBalance","authKey":"3babe4e1bac2191acb0bf241ca26c9dd65924eff","driverID":"644"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 13:30:3232
+
+Request: 
+{"action":"getDriverBalance","authKey":"a4603d0e9e589c418798054911675b4505dbf689","driverID":"95"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 13:30:3131
+
+Request: 
+{"action":"getDriverBalance","authKey":"a4603d0e9e589c418798054911675b4505dbf689","driverID":"95"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost Authentication
+
+Date: 
+01-06-2019 13:30:3131
+
+Request: 
+{"action":"getDriverBalance","authKey":"a4603d0e9e589c418798054911675b4505dbf689","driverID":"95"}
+
+Error Details: 
+
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), setGhostAuthenticationID() in getDriverBalance (getDriverBalance), __construct() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), makeGhostCon() in getGhostAuthentication (getGhostAuthentication), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+01-06-2019 13:30:1313
+
+Request: 
+{"action":"resellerLogin","emailAddress":"exotic117@minicabsinlondon.com","password":"Ex0tic117wpd"}
+
+Error Details: 
+Duplicate entry 'a4603d0e9e589c418798054911675b4505dbf689' for key 'PRIMARY'
+SQL: INSERT INTO `authorisationLogins` (`authKey`, `emailAddress`, `made`, `expired`, `ipAddress`) VALUES ('a4603d0e9e589c418798054911675b4505dbf689', 'exotic117@minicabsinlondon.com', '1559392213', '1559392513', '79.77.3.147')
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in resellerLogin (resellerLogin), checkLoginDetails() in resellerLogin (resellerLogin), insert() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+27-05-2019 15:45:4242
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"625d1b11c149b42e99cef354ab28b0ec","docType":"Private Hire Insurance","authKey":"74123c52158950823698d4d68a165d242bfdc5ab"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>29</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 13:45:3535
+
+Request: 
+{"action":"postEmails"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 12:15:2626
+
+Request: 
+{"action":"postEmails"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 11:45:2727
+
+Request: 
+{"action":"postEmails"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 11:39:4646
+
+Request: 
+{"action":"tempStaffLogin","emailAddress":"xrulez.gr@gmail.com","password":"21061996xF!"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 11:39:4242
+
+Request: 
+{"action":"tempStaffLogin","emailAddress":"xrulez.gr@gmail.com","password":"21061996xF!"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in tempStaffLogin (tempStaffLogin), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 11:39:3535
+
+Request: 
+{"action":"tempStaffLogin","emailAddress":"xrulez.gr@gmail.com","password":"21061996xF!"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 11:39:3030
+
+Request: 
+{"action":"tempStaffLogin","emailAddress":"xrulez.gr@gmail.com","password":"21061996xF!"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in tempStaffLogin (tempStaffLogin), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+24-05-2019 11:37:0202
+
+Request: 
+{"action":"tempStaffLogin","emailAddress":"xrulez.gr@gmail.com","password":"21061996xF!"}
+
+Error Details: 
+Connection failed: Too many connections
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in tempStaffLogin (tempStaffLogin), __construct() in mysqlConnection (mysqlConnection), makeConnection() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+23-05-2019 15:01:3131
+
+Request: 
+{"action":"getDriverBalance","authKey":"8efdc4561bd61a43220b671a0f4251adaf1c8c09"}
+
+Error Details: 
+{"Callsign":"38","PIN":"0038"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+23-05-2019 14:44:1212
+
+Request: 
+{"action":"getDriverBalance","authKey":"0befe6ee2a353658b8eea1f9aa0e752241471fdd"}
+
+Error Details: 
+{"Callsign":"38","PIN":"0038"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+23-05-2019 14:43:1818
+
+Request: 
+{"action":"getDriverBalance","authKey":"0befe6ee2a353658b8eea1f9aa0e752241471fdd"}
+
+Error Details: 
+{"Callsign":"38","PIN":"0038"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:42:5858
+
+Request: 
+{"action":"getDriverBalance","authKey":"d8441dafccb38519b17840b57840955bf34c362b","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:42:2626
+
+Request: 
+{"action":"getDriverBalance","authKey":"d8441dafccb38519b17840b57840955bf34c362b","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:41:5757
+
+Request: 
+{"action":"getDriverBalance","authKey":"40c144506764b9b9fd2194b22130460564f2a0d3","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:39:4242
+
+Request: 
+{"action":"getDriverBalance","authKey":"40c144506764b9b9fd2194b22130460564f2a0d3","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:39:4141
+
+Request: 
+{"action":"getDriverBalance","authKey":"40c144506764b9b9fd2194b22130460564f2a0d3","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:39:4040
+
+Request: 
+{"action":"getDriverBalance","authKey":"40c144506764b9b9fd2194b22130460564f2a0d3","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:38:4040
+
+Request: 
+{"action":"getDriverBalance","authKey":"4ac77c85a1df8876e8d929df633852fc3bf8841e","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:38:4040
+
+Request: 
+{"action":"getDriverBalance","authKey":"4ac77c85a1df8876e8d929df633852fc3bf8841e","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:38:3939
+
+Request: 
+{"action":"getDriverBalance","authKey":"4ac77c85a1df8876e8d929df633852fc3bf8841e","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+22-05-2019 09:38:3434
+
+Request: 
+{"action":"getDriverBalance","authKey":"4ac77c85a1df8876e8d929df633852fc3bf8841e","driverID":"93"}
+
+Error Details: 
+{"Callsign":"93","PIN":"0093"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+19-05-2019 21:23:5353
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"38f334aa0472761062d70e8178978166","docType":"Private Hire Insurance","authKey":"e1da9c3e28e1c7e19aaac667d0e0e155b093faef"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>29</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+13-05-2019 23:42:1919
+
+Request: 
+{"action":"getDriverBalance","authKey":"0de6c2bca9b22c0f2fd42471421addc847ba3ff2","driverID":"56"}
+
+Error Details: 
+{"Callsign":"56","PIN":"0056"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+13-05-2019 23:42:1212
+
+Request: 
+{"action":"getDriverBalance","authKey":"0de6c2bca9b22c0f2fd42471421addc847ba3ff2","driverID":"56"}
+
+Error Details: 
+{"Callsign":"56","PIN":"0056"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+11-05-2019 22:58:4141
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"26fcd90e938da910f70879b0a166ba3d","docType":"Private Hire Insurance","authKey":"6ccbbb2bc257d0b8695b2d60d94dbafdb3113ecb"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>29</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+11-05-2019 05:50:2020
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"e2ef887bb2c4ed1a296e323b3f1dcbd2","docType":"Private Hire Insurance","authKey":"9567cd23133ef935ceafec4db0192c75b7ab4b8c"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+05-05-2019 00:02:4747
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"402797edbc4cce7ae04113f470db49cc","docType":"Hire Agreement","authKey":"3a4e193c19740e680812789a4b34fbbb61a3d830"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 23:39:0707
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"a0b08f1c54ad94e69df688bc6ddd7483","docType":"Hire Agreement","authKey":"2c83ba40b44caeb21546335a9dc2e6659bebb87d"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 23:38:3333
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"a0b08f1c54ad94e69df688bc6ddd7483","docType":"Private Hire Vehicle Licence","authKey":"2c83ba40b44caeb21546335a9dc2e6659bebb87d"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 23:37:5252
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"9c899047741816582fee9a55c09ba740","docType":"Private Hire Insurance","authKey":"2c83ba40b44caeb21546335a9dc2e6659bebb87d"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 23:37:5252
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"9c899047741816582fee9a55c09ba740","docType":"Private Hire Insurance","authKey":"2c83ba40b44caeb21546335a9dc2e6659bebb87d"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 23:37:0606
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"7033654be00f6ee6eb71aa3185421e1a","docType":"Private Hire Insurance","authKey":"2c83ba40b44caeb21546335a9dc2e6659bebb87d"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>74</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 13:16:4747
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"a308ea00403a4f36649886e64b6fc9d3","docType":"Private Hire Vehicle Licence","authKey":"a70c705004ab78c8800cd55b29de181a9392f75b"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>29</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+04-05-2019 13:16:0303
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"746c37431b69359639f9caf4e9c1231a","docType":"Private Hire Insurance","authKey":"a70c705004ab78c8800cd55b29de181a9392f75b"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>29</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+03-05-2019 16:52:4444
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"fc5c8002c9e2b3380160929f1a093abe","docType":"MOT","authKey":"a453820623068e37a61ea6019087f51b5d3554b2"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+02-05-2019 18:27:3636
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"0c591dbcc3ab57c395190b2730d10cf8","docType":"Photograph","authKey":"2a1f2dfcac81d425eb0fa590dd7e751b0b5bd639"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+02-05-2019 18:03:5353
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"224"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='224'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='224'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+02-05-2019 18:00:5151
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"4e5955d8d4089317f3ff9f8d1da1c1d6","docType":"Private Hire Insurance","authKey":"3444fb1d1f5c66b81e660ea5cddfff4ec80f97da"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+02-05-2019 17:40:4646
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"55a6fa4940530edc40aa309bba423147","docType":"MOT","authKey":"229ef14a0b29f972483b3644b099ab17f261a8ce"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+02-05-2019 17:30:2626
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"4bf8ce624b1ad4decc55290d84919aaf","docType":"Front Driving Licence","authKey":"3143cdb64a5e8591802d301a911a84da3f9da69b"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+02-05-2019 17:27:2424
+
+Request: 
+{"action":"getDriverBalance","authKey":"32cc916c2edf6181578e525d1e7a7d99291146fa"}
+
+Error Details: 
+{"Callsign":"67","PIN":"0067"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+02-05-2019 17:27:0303
+
+Request: 
+{"action":"getDriverBalance","authKey":"32cc916c2edf6181578e525d1e7a7d99291146fa"}
+
+Error Details: 
+{"Callsign":"67","PIN":"0067"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+02-05-2019 17:26:0404
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"1b23b7a151fe1d943f87f760d025312d","docType":"Front Driving Licence","authKey":"32cc916c2edf6181578e525d1e7a7d99291146fa"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>67</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+02-05-2019 17:25:2525
+
+Request: 
+{"action":"getDriverBalance","authKey":"32cc916c2edf6181578e525d1e7a7d99291146fa"}
+
+Error Details: 
+{"Callsign":"67","PIN":"0067"}
+Status Code: 404
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+02-05-2019 17:01:2424
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"94cfffcbdeff4b7b20a092be11019571","docType":"MOT","authKey":"fa382898fceca9e235f8d4c3bfafd3cf864ae668"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+02-05-2019 16:51:0404
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"4"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='4'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='4'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+02-05-2019 16:50:4747
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"6"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='6'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='6'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+02-05-2019 16:50:4242
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"5"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='5'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='5'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+01-05-2019 01:35:0000
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"044d0fac57b89ac3cddae43612fccc15","docType":"MOT","authKey":"9643de31537b55ba8db2569b01004a1efa10a926"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>222</b>' has uploaded a new document and requested its renew.
+</p>
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+19-04-2019 19:46:5454
+
+Request: 
+{"action":"createTicket","authKey":"7e59a1aec376940a1dc393b935dbe32c26cba0a9","ticketType":"driverGeneric","subject":"test subject - job wasn't paid properly!\"!!!!!!!!!!!!!!!!!!!!!!!!!!","type":"Account Problem","content":"\"$^*()_(&%\u00a3\"\u00a3$^&* test description\nbhavish\nline 3\nproblem\nline 5"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 't paid properly!&quot;!!!!!!!!!!!!!!!!!!!!!!!!!!<br><br>
+
+    Please, allow us' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in createTicket (createTicket), sendEmail() in createTicket (createTicket), __destruct() in createEmail (createEmail), __destruct() in MonoBehaviour (createEmail), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+19-04-2019 19:45:1919
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"96d85eea5fd8e56c5932624f9e7cc070","docType":"Private Hire Insurance","authKey":"7e59a1aec376940a1dc393b935dbe32c26cba0a9"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>67</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+19-04-2019 19:39:4949
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"1000"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='1000'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='1000'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+19-04-2019 19:14:1818
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"4"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='4'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='4'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+16-04-2019 21:17:2424
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"4"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='2'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='2'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql
+
+Date: 
+16-04-2019 21:13:4444
+
+Request: 
+{"action":"deleteDriverAccount","recordID":"4"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SET `driverID`='2'' at line 1
+SQL: DELETE FROM `driverFileUploadHistory` SET `driverID`='2'
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in deleteDriverAccount (deleteDriverAccount), deleteDriverFileHistory() in deleteDriverAccount (deleteDriverAccount), delete() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+16-04-2019 14:29:2828
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"c91cc060014373cdaeaa369967f84cc6","docType":"Private Hire Insurance","authKey":"288e834d5857b53bff04a74851605609901bc8aa"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>29</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+08-04-2019 10:09:2727
+
+Request: 
+{"action":"getDriverBalance","authKey":"61a2a1760638b1063f5f86c714dda349d3ca218e","driverID":"42"}
+
+Error Details: 
+{"Callsign":"42","PIN":"0042"}
+Status Code: 503
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Ghost - Get Driver Balance
+
+Date: 
+07-04-2019 17:41:3737
+
+Request: 
+{"action":"getDriverBalance","authKey":"d785eae7dd9431cbd5e76b7795467ad3e7c00e37","driverID":"30"}
+
+Error Details: 
+{"Callsign":"30","PIN":"0030"}
+Status Code: 503
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in getDriverBalance (getDriverBalance), getBalance() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), executeDriverBalanceCheck() in getDriverBalance (getDriverBalance), 
+
+
+
+
+=========================================================================
+Subject: 
+Mysql on close
+
+Date: 
+07-04-2019 02:00:1616
+
+Request: 
+{"action":"addDriverDocument","driverAuth":"","documentEnc":"57eb60ec93787b462c4782498c0ed801","docType":"MOT","authKey":"6c9176db1eb23e6f0c6709fa52b38b70820e4d9f"}
+
+Error Details: 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Driver <b>999</b>' has uploaded a new document and requested its renew.
+</p>
+
+' at line 2
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in addDriverDocument (addDriverDocument), sendEmail() in addDriverDocument (addDriverDocument), __destruct() in createEmail (createSystemNotification), __destruct() in MonoBehaviour (createSystemNotification), __destruct() in mysqlConnection (mysqlConnection), 
+
+
+
+
+=========================================================================
+Subject: 
+displayLayout
+
+Date: 
+06-04-2019 14:28:2121
+
+Request: 
+{"driverDetails":{"driverName":"KAMI AKHGAR","driverEmail":"goldar_k@hotmail.com","driverMobile":"07467144433","driverNINo":"SP248029B"},"driverDocs":{"DLF":"1588d4901e2f3e824586f63485340f07","DLB":"1a4252ae894ea6c57bb64e234e31f783","PHDL":"7da11f2f0220baddc0a719fed05615de","PHVL":"19140c128ae29985524d515d3d969992","MOT":"e0f18f623c56073b4c1e3897ba4afd6e","PHI":"14ee18e9e47eb911545503b83eec303c","PSP":"08c6e39b2fe4caa31554e03984afadb2","VHA":"6fe95bf13cc363b2b09a48ac8b57c36e"},"action":"createDriverApplication"}
+
+Error Details: 
+The filename 'createDriverApplication' does not exist on the templates folder!
+
+Tracing: 
+__construct() in startSystem (startSystem), startActionService() in startSystem (startSystem), __construct() in createDriverApplication (createDriverApplication), sendEmail() in createDriverApplication (createDriverApplication), __construct() in createEmail (createEmail), 
+
+
+
+

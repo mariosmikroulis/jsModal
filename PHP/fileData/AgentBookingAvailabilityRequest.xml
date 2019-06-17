@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AgentBookingAvailabilityRequest>
+    <Agent Id=”{{agentID}}”>
+        <Password>{{agentPassword}}</Password>
+        <Reference>{{agentRef}}</Reference>
+        <Time>2012-11-16T15:04:57.123Z</Time>
+    </Agent>
+
+    <Vendor Id=”{{vendorID}}” />
+    <BookingParameters>
+        <Source>Other</Source>
+        <BookingTime>{{bookingDate}}</BookingTime>
+        <Pricing>
+            <Currency>{{currency}}</Currency>
+            <PaymentType>{{paymentType}}</PaymentType>
+            {{ContractReference}}
+        </Pricing>
+        <Journey>
+            <From>
+                <Type>Address</Type>
+                <Data>{{pickupFull}}</Data>
+                <Coordinate>
+                    <Latitude>{{pickupLat}}</Latitude>
+                    <Longitude>{{pickupLng}}</Longitude>
+                </Coordinate>
+            </From>
+            <To>
+                <Type>Address</Type>
+                <Data>{{dropoffFull}}</Data>
+                <Coordinate>
+                    <Latitude>{{dropoffLat}}</Latitude>
+                    <Longitude>{{dropoffLng}}</Longitude>
+                </Coordinate>
+            </To>
+        </Journey>
+
+        <Ride Type=”Passenger”>
+            <Count>{{numPassengers}}</Count>
+            <Luggage>{{numLuggages}}</Luggage>
+            <Facilities>{{wheelchairSupport}}</Facilities>
+            <DriverType>Any</DriverType>
+            <VehicleType>{{vehicleType}}</VehicleType>
+        </Ride>
+    </BookingParameters>
+</AgentBookingAvailabilityRequest>
