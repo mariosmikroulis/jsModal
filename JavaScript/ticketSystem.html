@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="others/bootstrap.css">
+    <link rel="stylesheet" href="libertyStyle.css">
+    <script src="others/jquery.js"></script>
+    <script src="others/bootstrap.js"></script>
+    <script src="libertyLib.js"></script>
+    <title>Title</title>
+    <script>
+        let tickets, resultContent;
+
+        window.addEventListener("load", function(){
+            tickets = new ticketSystem({ticketType : "driverGeneric", cookieName : "driverportal", mainDir: "ticket_"});
+            resultContent = new libertyLibrary.modal({modalID: "resultContent"});
+        });
+        
+        function ticketSystem(data)
+        {
+            let mainDiv, ticketID = 0, ticketTableList, ticketList, ticketDetails, dir, serverCon, sectionIDs = ["viewTickets", "creatingTicket", "respondTicket"];
+            let load, loadSort, getTickets, onClick, showViewTickets, hideAllSections, showNewTickets, showResponseTicket, getAvailableTickets;
+            let onFocusOut, setColorBorder, clearColorBorder, validateSection, displayError, validateInput, setMainDir, createTicket;
+            let insertToTable, loadResponseTicket, responseSetComSec, responseSetInfo, responseSetName, responseSetTime, responseSetDetails, replyTicket;
+            dir = "ticket_";
+
+            load = function()
+            {
+                serverCon = new libertyLibrary.serverConnections();
+                setMainDir();
+                getAvailableTickets();
+                mainDiv = libertyLibrary.el(dir + "content").getEl();
+                ticketTableList = libertyLibrary.el(dir + "tableList").getEl();
+                mainDiv.addEventListener("click", onClick);
+                mainDiv.addEventListener("focusout", onFocusOut);
+                loadSort();
+            };
+
+            setMainDir = function()
+            {
+                if(typeof data.mainDir === "string")
+                {
+                    dir = data.mainDir;
+                }
+            };
+
+            loadSort = function()
+            {
+                let getTRs, i;
+                getTRs = ticketTableList.getElementsByTagName("tr")[0].getElementsByTagName("td");
+
+                for(i=0; i<getTRs.length; i++)
+                {
+                    getTRs[i].id = dir + "mainRow_" + i;
+                }
+            };
+
+            onClick = function(e)
+            {
+                let rowID, id;
+
+                if(e.target.id !== "")
+                {
+                    id = e.target.id;
+
+                    if(id.indexOf(dir + "main") > -1)
+                    {
+                        rowID = id.split("_")[2];
+                        libertyLibrary.table.sort(ticketTableList.id, rowID);
+                    }
+
+                    else if(id.indexOf(dir + "response") > -1)
+                    {
+                        showResponseTicket(id);
+                    }
+
+                    if(id === dir + "newTicketBtn")
+                    {
+                        showNewTickets();
+                    }
+
+                    else if(id === dir + "createBtn")
+                    {
+                        if(validateSection("create"))
+                        {
+                            createTicket();
+                        }
+                    }
+
+                    else if(id === dir + "replyBtn")
+                    {
+                        if(validateSection("respond"))
+                        {
+                            replyTicket();
+                        }
+                    }
+
+                    else if(id === dir + "resolvedBtn")
+                    {
+                        if(validateSection("respond"))
+                        {
+                            replyTicket(true);
+                        }
+                    }
+
+                    else if(libertyLibrary.filterInput.isInput(e))
+                    {
+                        clearColorBorder(id);
+                    }
+                }
+
+                if(e.target.classList.contains("backBtn"))
+                {
+                    showViewTickets();
+                }
+            };
+
+            onFocusOut = function(e)
+            {
+                if(typeof e.target !== "undefined" && typeof e.target.id !== "undefined")
+                {
+                    if(libertyLibrary.filterInput.isInput(e)) {
+                        setColorBorder(e.target.id, validateInput(e.target.id));
+                    }
+                }
+            };
+
+            validateInput = function(id)
+            {
+                let val = libertyLibrary.el(id).val();
+                let lengthStringCheck = [dir + "subject", dir + "ticketType", dir + "ticketDes", dir + "ticketResponse"];
+
+                if(lengthStringCheck.indexOf(id) > -1)
+                {
+                    if(val.length < 5)
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            };
+
+
+            validateSection = function(section)
+            {
+                let errorList = [];
+
+                if(section === "create")
+                {
+                    if(!validateInput(dir + "subject"))
+                    {
+                        errorList.push("You have to enter a brief subject.");
+                    }
+
+                    if(!validateInput(dir + "ticketType"))
+                    {
+                        errorList.push("You have to select a ticket type.");
+                    }
+
+                    if(!validateInput(dir + "ticketDes"))
+                    {
+                        errorList.push("Your description is too short.");
+                    }
+                }
+
+                else if(section === "respond")
+                {
+                    if(!validateInput(dir + "ticketResponse"))
+                    {
+                        errorList.push("Your response is too short.");
+                    }
+                }
+
+                if(errorList.length > 0)
+                {
+                    displayError(errorList);
+                    return false;
+                }
+
+                return true;
+            };
+
+            displayError = function(t)
+            {
+                let m = "";
+                if(typeof t === "object")
+                {
+                    Object.keys(t).forEach(function (key) {
+                        m += "<li>" + t[key] + "</li>";
+                    });
+                }
+
+                else
+                {
+                    m="<li>"+t+"</li>";
+                }
+
+                m = "<b>There is one or more issues with your application. Check the followings:</b><ul>"+m+"</ul><br> Please ensure that all the fields are entered before you submit your application.";
+
+                resultContent.show({title:"Oops, There is an issue", body: m});
+            };
+
+            setColorBorder = function(_id, result)
+            {
+                if(result)
+                {
+                    document.getElementById(_id).parentElement.classList.add("greenBorder");
+                }
+
+                else
+                {
+                    document.getElementById(_id).parentElement.classList.add("redBorder");
+                }
+            };
+
+            clearColorBorder = function(_id)
+            {
+                document.getElementById(_id).parentElement.classList.remove("redBorder");
+                document.getElementById(_id).parentElement.classList.remove("greenBorder");
+            };
+
+            getTickets = function(callFunction = null)
+            {
+                let api = {
+                    action: "viewTickets",
+                    authKey: libertyLibrary.cookies.get(data.cookieName),
+                    ticketID: ticketID,
+                    ticketType: data.ticketType
+                };
+
+                serverCon.makeConnection(api, {
+                    Success: function(response)
+                    {
+                        if(typeof callFunction === "function") {
+                            callFunction(response.data);
+                        }
+                    },
+                    Fail: function(response)
+                    {
+                        resultContent.show({title:"Oops, There is an issue", body: response.reason});
+                    },
+                    Error: function(status = 0)
+                    {
+                        resultContent.show({title:"Request failure - Status " + status, body: "There was a problem connecting to the server. Therefore, your request was not completed successfully. Please try again later!"});
+                    }
+                });
+            };
+
+            replyTicket = function(issueResolved = false)
+            {
+                let api = {
+                    action: "updateTicket",
+                    authKey: libertyLibrary.cookies.get(data.cookieName),
+                    ticketID: ticketID,
+                    ticketType: data.ticketType,
+                    content: libertyLibrary.el(dir + "ticketResponse").val(),
+                    issueResolved : issueResolved
+                };
+
+                serverCon.makeConnection(api, {
+                    Success: function(response)
+                    {
+                        libertyLibrary.el(dir + "ticketResponse").val("");
+                        ticketDetails.comments.push(response.data);
+                        loadResponseTicket();
+                    },
+                    Fail: function(response)
+                    {
+                        resultContent.show({title:"Oops, There is an issue", body: response.reason});
+                    },
+                    Error: function(status = 0)
+                    {
+                        resultContent.show({title:"Request failure - Status " + status, body: "There was a problem connecting to the server. Therefore, your request was not completed successfully. Please try again later!"});
+                    }
+                });
+            };
+
+            createTicket = function()
+            {
+                let api = {
+                    action: "createTicket",
+                    authKey: libertyLibrary.cookies.get(data.cookieName),
+                    ticketType: data.ticketType,
+                    subject: libertyLibrary.el(dir + "subject").val(),
+                    type: libertyLibrary.el(dir + "ticketType").val(),
+                    content: libertyLibrary.el(dir + "ticketDes").val(),
+                };
+
+                serverCon.makeConnection(api, {
+                    Success: function(response)
+                    {
+                        resultContent.show({title:"Your ticket is received.", body: "Your ticket was received by us successfully. Please, allow us 48 hours to reply your ticket."});
+                        ticketID = 0;
+                        getAvailableTickets();
+                        showViewTickets();
+                    },
+                    Fail: function(response)
+                    {
+                        resultContent.show({title:"Oops, There is an issue", body: response.reason});
+                    },
+                    Error: function(status = 0)
+                    {
+                        resultContent.show({title:"Request failure - Status " + status, body: "There was a problem connecting to the server. Therefore, your request was not completed successfully. Please try again later!"});
+                        if(ticketID!==0)
+                        {
+                            showViewTickets();
+                        }
+                    }
+                });
+            };
+
+            hideAllSections = function()
+            {
+                let i;
+                for(i=0; i < sectionIDs.length; i++)
+                {
+                    if(document.getElementById(dir+sectionIDs[i]))
+                    {
+                        libertyLibrary.el(dir + sectionIDs[i]).hide();
+                    }
+                }
+            };
+
+            getAvailableTickets = function()
+            {
+                getTickets(function(data)
+                {
+                    ticketList = data;
+                    insertToTable();
+                })
+            };
+
+            insertToTable = function()
+            {
+                let i, dataList = [], btn = "";
+
+
+                for(i=0; i < libertyLibrary.getObjectLength(ticketList); i++)
+                {
+                    btn = "<button id='" + dir + "response_" + ticketList[i].ticketID + "' class='customBtn btn-success'>View Ticket</button>";
+                    if(data.ticketType === "driverGeneric" && data.cookieName === "staff") {
+                        console.log("test1");
+                        dataList.push([ticketList[i].ticketID, ticketList[i].createdBy, ticketList[i].subject, ticketList[i].ticketStatus, btn]);
+                    }
+
+                    else
+                    {
+                        console.log("test2");
+                        dataList.push([ticketList[i].ticketID, ticketList[i].subject, ticketList[i].ticketStatus, btn]);
+                    }
+                }
+
+                libertyLibrary.table.insert(dir + "tableList", dataList);
+            };
+
+            showViewTickets = function()
+            {
+                hideAllSections();
+                libertyLibrary.el(dir + "viewTickets").show();
+            };
+
+            showNewTickets = function()
+            {
+                hideAllSections();
+                libertyLibrary.el(dir + "creatingTicket").show();
+            };
+
+            showResponseTicket = function(ticketElID)
+            {
+                if(typeof ticketDetails !== "object" || ticketElID.split("_")[2] !== ticketDetails["ticketID"])
+                {
+                    ticketID = ticketElID.split("_")[2];
+                    getTickets(function (data)
+                    {
+                        ticketDetails = data;
+                        console.log(data);
+                        loadResponseTicket();
+                    });
+                }
+
+                hideAllSections();
+                libertyLibrary.el(dir + "respondTicket").show();
+            };
+
+            loadResponseTicket = function()
+            {
+                let i, commentSection = libertyLibrary.el(dir + "viewComments").getEl(), commentLayout = "";
+                libertyLibrary.el(dir + "viewTicketSubject").inner("Ticket #" + ticketDetails.ticketID + " - " + ticketDetails.subject + " [Status: " + ticketDetails.ticketStatus + "]");
+                for(i=0; i < libertyLibrary.getObjectLength(ticketDetails.comments); i++)
+                {
+                    commentLayout += responseSetComSec(i);
+                }
+
+                commentSection.innerHTML = commentLayout;
+            };
+
+            responseSetComSec = function(commentID)
+            {
+                return "<div class='ticket_commentSection'>" + responseSetInfo(commentID) + responseSetDetails(commentID) + "</div>";
+            };
+
+            responseSetInfo = function(commentID)
+            {
+                return "<div class='ticket_commentInfo'>" + responseSetName(commentID) + responseSetTime(commentID) + "</div>";
+            };
+
+            responseSetName = function(commentID)
+            {
+                return "<div class='col-xs-6 col-sm-6 ticket_userNickname'>" + ticketDetails.comments[commentID].userNickname + " - " + ticketDetails.comments[commentID].userType +"</div>";
+            };
+
+            responseSetTime = function(commentID)
+            {
+                return "<div class='col-xs-6 col-sm-6 ticket_respondDate'>" + ticketDetails.comments[commentID].date + "</div>";
+            };
+
+            responseSetDetails = function(commendID)
+            {
+                return "<div class='ticket_commentDetails'>" + ticketDetails.comments[commendID].content + "</div>";
+            };
+
+            load();
+        }
+    </script>
+</head>
+    <body>
+        <style>
+            .no-margin
+            {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            #createNewTicket, #errorMessage
+            {
+                display: none;
+            }
+        </style>
+
+        <script src="//server.driversinlondon.com/lib/tickets/ticketLib.js"></script>
+        <script>
+            let tickets, resultContent;
+
+
+            window.addEventListener("load", function(){
+                tickets = new ticketSystem({ticketType : "driverGeneric", cookieName : "driverportal", mainDir: "ticket_"});
+                resultContent = new libertyLibrary.modal({modalID: "resultContent"});
+            });
+        </script>
+
+        <div class="jumbotron text-center">
+            <h1>Tickets</h1>
+            <p>Here you can create any ticket you have or view already existing ones.</p>
+        </div>
+
+
+        <div class="lib_section ticket_content" id="ticket_content">
+            <div class="lib_section" id="ticket_viewTickets">
+                <button id="ticket_newTicketBtn" class="btn btn-primary">Create a new ticket</button>
+                <div class="lib_row">
+                    <table class="table" id="ticket_tableList">
+                        <tr>
+                            <td>ID</td>
+                            <td>Subject</td>
+                            <td>Status</td>
+                            <td>More</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="lib_section hideEl" id="ticket_creatingTicket">
+                <button class="btn btn-danger backBtn">Go Back</button>
+
+                <div class="lib_row">
+                    <div class="lib_inputLayout">
+                        <label for="ticket_subject">Subject:</label>
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control" id="ticket_subject" placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lib_row">
+                    <div class="lib_inputLayout">
+                        <label for="ticket_ticketType">Ticket Type:</label>
+                        <div class="input-group col-xs-12">
+                            <select class="form-control" id="ticket_ticketType">
+                                <option value="">Select a ticket type</option>
+                                <option value="General Question">General Question</option>
+                                <option value="Requesting">Requesting</option>
+                                <option value="Journey Problem">Journey Problems</option>
+                                <option value="Account Problem">Account Problems</option>
+                                <option value="Lost & Found">Lost & Found</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lib_row">
+                    <div class="lib_inputLayout">
+                        <label for="ticket_ticketDes">Description:</label>
+                        <div class="input-group col-xs-12">
+                            <textarea class="form-control" rows="5" id="ticket_ticketDes" placeholder="Enter your issue here"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="customBtn btn-success" id="ticket_createBtn">Submit this ticket</button>
+            </div>
+
+            <div class="lib_section hideEl" id="ticket_respondTicket">
+                <button class="btn btn-danger backBtn">Go Back</button>
+
+                <div class="lib_row ticket_viewTicketSubject" id="ticket_viewTicketSubject">
+                    <h2>Ticket 12 - Subject here [Status: Pending]</h2>
+                </div>
+
+                <div class="lib_row ticket_viewComments" id="ticket_viewComments">
+
+                </div>
+
+                <div class="lib_row">
+                    <div class="lib_inputLayout">
+                        <label for="ticket_ticketResponse">Reply:</label>
+                        <div class="input-group col-xs-12">
+                            <textarea class="form-control" rows="5" id="ticket_ticketResponse" placeholder="Enter your response here"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="customBtn btn-success" id="ticket_replyBtn">Submit this ticket</button>
+            </div>
+        </div>
+
+        <div class="modalMain" id="resultContent">
+            <div class="modal_container">
+                <div class="modal_header">
+                    <button type="button" class="modal_closeBtn modal_close">×</button>
+                    <h4 class="modal_title">Results</h4>
+                </div>
+                <div class='modal_content'>
+
+                </div>
+                <div class="modal_footer"><button type="button" class="btn btn-default modal_close">Close</button></div>
+            </div>
+        </div>
+    </body>
+</html>
