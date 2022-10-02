@@ -4,7 +4,7 @@ Welcome to my personal portfolio. In this repository you can find all the code I
 ## Programming Languages
 In addition to this repository, I have already worked with:
 - PHP 8.2+ in OOP
-- JavaScript including TypeScript, NodeJS, VueJS, jQuery a
+- JavaScript including TypeScript, NodeJS, VueJS, jQuery and lighl ReactJS
 - Python and Django Framework
 - SQL for MariaDB & MySQL, SQLite and PostSQL
 - Java
