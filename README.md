@@ -37,3 +37,7 @@ Additionally, I know how to work with:
 ## Suggestions
 Finally, I would like to suggest you watch a system I developed for my university as final project to the following link:
 https://www.youtube.com/watch?v=LKlRae5L9x8
+
+## Contact me
+- [LinkedIn]: https://linkedin.mariosmikroulis.com/
+- [Email]: mailto:mariosmikroulis@gmail.com
